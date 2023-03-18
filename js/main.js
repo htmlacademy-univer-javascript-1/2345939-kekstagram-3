@@ -1,6 +1,6 @@
 export function randomIntInRange(min, max){
-  let a = min(min, max);
-  let b = max(min, max);
+  const a = min(min, max);
+  const b = max(min, max);
   return (Math.random()* (b - a) + a)
 
 }
