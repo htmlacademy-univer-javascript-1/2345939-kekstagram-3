@@ -6,4 +6,3 @@ export const randomIntInRange = (min, max) =>{
 
 export const stringLengthCheck = (string, length) =>
   string.length <= length;
-
