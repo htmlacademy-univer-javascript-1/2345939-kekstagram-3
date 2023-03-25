@@ -1,4 +1,3 @@
-import {randomIntInRange} from './util.js';
 
 const createPhoto = (id) => {
   return{
@@ -11,7 +10,7 @@ const createPhoto = (id) => {
 };
 
 function getPhotosArray() {
-  array = Array.from({length: 25});
+  let array = Array.from({length: 25});
   for (let i = 0; i <= 25; i++) {
       array[i] = createPhoto(i);
   }
