@@ -1,3 +1,8 @@
+const randomIntInRange = (min, max) =>{
+  const a = min(min, max);
+  const b = max(min, max);
+  return ((Math.random()* (b - a) + a).floor);
+};
 
 const createPhoto = (id) => {
   return{
@@ -10,7 +15,7 @@ const createPhoto = (id) => {
 };
 
 function getPhotosArray() {
-  let array = Array.from({length: 25});
+  const array = Array.from({length: 25});
   for (let i = 0; i <= 25; i++) {
       array[i] = createPhoto(i);
   }
