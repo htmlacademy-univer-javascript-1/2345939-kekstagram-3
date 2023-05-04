@@ -10,20 +10,8 @@ const setEffect = (newEffect) =>{
 };
 
 
-const Effects = {
-  Original: 'none',
-  Chrome: 'chrome',
-  Sepia: 'sepia',
-  Marvin: 'marvin',
-  Phobos: 'phobos',
-  Heat: 'heat'
-};
-
-let currentEffect = Effects.Original;
-
-
 effectsList.addEventListener('change', (evt) => {
-  currentEffect = evt.target;
+  const currentEffect = evt.target;
   if (currentEffect.tagName !== 'INPUT') {
     return;
   }
