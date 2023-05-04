@@ -11,12 +11,12 @@ function cleanForm() {
   commentInput.value = '';
 }
 
-const escapeOnForm = (evt) => {
+function escapeOnForm (evt){
   if (isEscKey(evt)) {
     evt.preventDefault();
     closeDownloadPhotoWindow();
   }
-};
+}
 
 function openDownloadPhotoWindow() {
   document.querySelector('.img-upload__overlay').classList.remove('hidden');

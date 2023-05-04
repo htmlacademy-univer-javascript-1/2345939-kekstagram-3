@@ -1,10 +1,11 @@
-import {findTemplate} from './util.js';
 import { photosArray } from './data.js';
+import { findTemplate } from './util.js';
+
+const pictureTemplate = findTemplate('#picture', '.picture')
+const photoList = document.querySelector('.pictures');
 
 export const drawPhotos = () => {
   const documentFragment = document.createDocumentFragment();
-  const pictureTemplate = findTemplate('#picture', '.picture');
-  const photoList = document.querySelector('.pictures');
   const photos = photosArray(25);
   photos.forEach(({url, comments, likes}) => {
     const photoElement = pictureTemplate.cloneNode(true);

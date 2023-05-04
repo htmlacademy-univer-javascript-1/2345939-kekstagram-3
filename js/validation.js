@@ -1,4 +1,4 @@
-import { stringLengthValidation } from './util';
+import { stringLengthValidation } from './util.js';
 
 const form = document.querySelector('.img-upload__form');
 

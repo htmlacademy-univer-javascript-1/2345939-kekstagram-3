@@ -1,6 +1,9 @@
-import {createPhoto} from './data.js';
-import {drawPhoto} from './draw.js';
+import './data.js';
+import './util.js';
+import './form.js';
+import './validation.js';
+import './scale.js';
+import './effects.js';
+import { drawPhotos } from './draw.js';
 
-const photos = createPhoto(25);
-drawPhoto(photos);
-//Задание 7 часть 2
+drawPhotos();
