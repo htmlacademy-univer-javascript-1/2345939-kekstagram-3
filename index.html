@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/connect_error.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Кекстаграм</title>
 </head>
 
@@ -124,7 +125,12 @@
                 <!-- Добавление хэш-тегов и комментария к изображению -->
                 <fieldset class="img-upload__text text">
                   <div class="img-upload__field-wrapper">
-                    <input class="text__hashtags" name="hashtags" placeholder="#ХэшТег">
+                    <input class="text__hashtags"
+                        name="hashtags"
+                          placeholder="#ХэшТег"
+                          data-pristine-required-message="Введите ХэшТег"
+                            data-pristine-minlength-message="Минимальная длина 3 символа"
+                              data-pristine-maxlength-message="Максимальная длина 15 символов">
                   </div>
                   <div class="img-upload__field-wrapper">
                     <textarea
